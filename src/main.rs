@@ -20,6 +20,12 @@ fn main() -> Result<()> {
 
     // this applies only if user has provided one argument, for only one file.
     if arguments.len() < 2 {
+        println!("");
+        println!("------------------");
+        println!("Start of the file");
+        println!("------------------");
+        println!("");
+
         // using file path provided by the user.
         let file_path = arguments
             .get(1)
@@ -35,6 +41,12 @@ fn main() -> Result<()> {
         for line in reader.lines() {
             println!("{}", line?);
         }
+
+        println!("");
+        println!("------------------");
+        println!("End of the file");
+        println!("------------------");
+        println!("");
     }
     // this applies if user has provided more than one arguments, for reading more than one file.
     else if arguments.len() > 1 {

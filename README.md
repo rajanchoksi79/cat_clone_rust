@@ -1,72 +1,102 @@
-# catrs
+# 🐱 catrs - A Rust Implementation of `cat`
 
-# A Rust implementation of the classic Unix cat command.
+`catrs` is a simple Rust-based command-line utility that mimics the basic functionality of the Unix `cat` command. It reads the contents of one or more text files and prints them to the terminal.
 
-# 🐱 catrs
-
-A simple, minimal clone of the classic Unix `cat` command — built in Rust.
-
-`catrs` reads and prints the contents of one or more text files to standard output. This project is built for learning systems programming and CLI tool development in Rust.
+This project is part of my learning journey into Rust and low-level systems programming. Built with ❤️ for performance, readability, and simplicity.
 
 ---
 
-## 📦 Features
+## ✨ Features
 
-- Read and display contents of one or more files
-- Basic error handling for missing files
-- Mimics standard `cat` behavior
-- Written with clean, idiomatic Rust
+- 🧾 Read and print contents of a single file
+- 📂 Support for reading multiple files sequentially
+- 🛑 Graceful error handling for missing or inaccessible files
+- 💡 Clean and beginner-friendly Rust code
 
 ---
 
-## 🚀 Usage
+## 🛠️ Installation
 
-### 🛠️ Build
+### Option 1: Run from source (for developers)
 
 ```bash
-cargo build --release
-```
-
----
-
-## Binary will be created at:
-
-```bash
-target/release/catrs
-```
-
----
-
-## Or run it directly with:
-
-```bash
+git clone https://github.com/yourusername/catrs.git
+cd catrs
 cargo run -- file1.txt file2.txt
 ```
 
+### Option 2: Build a release binary
+
+```bash
+cargo build --release
+./target/release/catrs file1.txt file2.txt
+```
+
+- On Windows use .\target\release\catrs.exe or move it to a directory in your system path.
+
+### Option 3: Install globally via Cargo
+
+```bash
+cargo install --git https://github.com/rajanchoksi79/catrs
+```
+
+- After installation, you can run catrs globally from anywhere in your terminal.
+
 ---
 
-## Example:
+## Usage
 
 ```bash
-catrs notes.txt
+catrs file.txt
 ```
 
 ```bash
-catrs intro.txt chapter_one.txt
+catrs file1.txt file2.txt
 ```
 
-## To install locally:
+- If one of the provided files doesn't exist, catrs will print an error message and continue with the next file.
+
+---
+
+## 📦 Example Output
 
 ```bash
-cargo install --path .
+--------------------------------
+Start of the file - 1
+--------------------------------
+Hello, World!
+This is a test.
+
+--------------------------------
+Start of the file - 2
+--------------------------------
+Second file here.
+More content...
 ```
 
-- Make sure $HOME/.cargo/bin is in your system PATH so you can use catrs globally.
+---
 
-## License
+## 🧠 Why This Project?
 
-- This project is open source under the MIT License.
+- I'm learning systems programming and exploring low-level concepts through Rust. Rebuilding classic Unix tools is a great way to understand:
 
-## Author
+  - File I/O
+  - Error handling
+  - Working with command-line arguments
+  - Structuring real CLI tools
 
-- Rajan Choksi - https://x.com/Rajanchoksi_79
+---
+
+## 📄 License
+
+MIT — feel free to use.
+
+---
+
+## 👋 Author
+
+- Rajan Choksi — Full Stack Developer diving into Rust & systems programming.
+
+- 📢 Say hi on Twitter - https://x.com/Rajanchoksi_79 or check out more of my work on GitHub - https://github.com/rajanchoksi79/catrs
+
+---

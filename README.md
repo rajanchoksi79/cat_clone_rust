@@ -89,7 +89,13 @@ More content...
 
 ## 📄 License
 
-MIT — feel free to use.
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the license terms.
+
+---
+
+## Contributions
+
+At this time, this project is maintained solely by me, and I am **not accepting contributions**. If that changes in the future, I will update this section accordingly.
 
 ---
 

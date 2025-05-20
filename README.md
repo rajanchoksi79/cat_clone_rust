@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 # catrs
-A Rust implementation of the classic Unix cat command.
-=======
+
+# A Rust implementation of the classic Unix cat command.
+
 # 🐱 catrs
 
 A simple, minimal clone of the classic Unix `cat` command — built in Rust.
@@ -69,5 +69,4 @@ cargo install --path .
 
 ## Author
 
-- Rajan Choksi - @Rajanchoksi_79
->>>>>>> ac7d620 (second change in project)
+- Rajan Choksi - https://x.com/Rajanchoksi_79

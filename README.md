@@ -1,2 +1,2 @@
-# cat_clone_rust
-this is cat clone made in rust
+# catrs
+A Rust implementation of the classic Unix cat command.

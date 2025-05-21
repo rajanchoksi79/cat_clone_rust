@@ -10,7 +10,7 @@ fn main() -> Result<()> {
 
     // this applies when user provided no arguments
     if arguments.len() < 2 {
-        println!("No file path is provided, provide valid file path as an argument");
+        eprintln!("No file path is provided, provide valid file path as an argument");
     }
     // this applies only if user has provided one argument, for only one file.
     else if arguments.len() == 2 {

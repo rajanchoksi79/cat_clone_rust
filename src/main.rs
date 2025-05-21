@@ -8,8 +8,12 @@ fn main() -> Result<()> {
     // collecting arguments as a vector.
     let arguments: Vec<String> = env::args().collect();
 
+    // this applies when user provided no arguments
+    if arguments.len() < 2 {
+        println!("No file path is provided, provide valid file path as an argument");
+    }
     // this applies only if user has provided one argument, for only one file.
-    if arguments.len() <= 2 {
+    else if arguments.len() == 2 {
         // using file path provided by the user.
         let file_path = arguments
             .get(1)

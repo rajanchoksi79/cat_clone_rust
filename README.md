@@ -20,7 +20,7 @@ This project is part of my learning journey into Rust and low-level systems prog
 ### Option 1: Run from source (for developers)
 
 ```bash
-git clone https://github.com/yourusername/catrs.git
+git clone https://github.com/rajanchoksi79/catrs.git
 cd catrs
 cargo run -- file1.txt file2.txt
 ```
